@@ -10,9 +10,13 @@ export const Gray2 = "#A0A0A0";
 export const Gray3 = "#676767";
 export const Gray4 = "#4A4A4A";
 export const Black = "#000";
+export const Black2 = "#343436";
+
 
 export const Purple1 = "#F7EDFF";
 export const Purple2 = "#8035DF";
+export const Purple3 = "#2452CA";
+
 
 export const Green1 = "#EDFFD0";
 export const Green2 = "#05C12E";

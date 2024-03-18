@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import * as FONT from "../../../../constants/font";
-import * as COLOR from "../../../../constants/color";
+import * as FONT from "../../constants/font";
+import * as COLOR from "../../constants/color";
 import { FaStar } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 
 export const ContentImage = styled.div`
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 5%;
 
   img {
@@ -51,12 +51,12 @@ export const IntroduceCover = styled.div`
 export const CoverTitle = styled.div`
   padding-top: 10%;
 
-  font-size: ${FONT.L};
+  font-size: ${FONT.M};
 `;
 
 export const CoverSubtitle = styled.div`
   display: flex;
-  font-size: ${FONT.M};
+  font-size: ${FONT.S};
   padding-top: 3%;
   padding-bottom: 3%;
 `;
@@ -79,7 +79,7 @@ export const CoverMidline = styled.span`
 
 export const CoverIntroduce = styled.div`
   padding-top: 5%;
-  font-size: ${FONT.M};
+  font-size: ${FONT.S};
   line-height: 1.5;
 `;
 
@@ -92,7 +92,6 @@ export const CoverFooter = styled.div`
   display: flex;
   align-items: center;
   font-size: ${FONT.S};
-  padding-top: 10%;
   height: 30px;
 `;
 export const Score = styled.div`

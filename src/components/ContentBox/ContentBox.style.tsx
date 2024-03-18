@@ -1,18 +1,19 @@
 import styled from "styled-components";
 import { FcPrevious } from "react-icons/fc";
 import { FcNext } from "react-icons/fc";
-import * as COLOR from "../../../../constants/color";
-import * as FONT from "../../../../constants/font";
+import * as COLOR from "../../constants/color";
+import * as FONT from "../../constants/font";
 
 export const ContentItems = styled.ul`
   display: flex;
   transition: transform 1s ease;
-  transform: ${({ start }) => `translateX(-${start * 250 + start * 12}px)`};
+  transform: ${({ start }) => `translateX(-${start * 200 + start * 12}px)`};
 `;
 
 export const ContentBx = styled.div`
   display: flex;
   align-items: center;
+  padding-top: 30px;
 `;
 
 export const ContentNav = styled.div`
@@ -60,7 +61,7 @@ export const SlideButton = styled.button`
   height: 40px;
   border-radius: 50%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   border: none;
 
   &:hover {
@@ -70,8 +71,8 @@ export const SlideButton = styled.button`
 `;
 
 export const Content = styled.div`
-  width: 1100px;
-  height: 400px;
+  width: 900px;
+  height: 350px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);

@@ -4,15 +4,37 @@ import * as FONT from "../../constants/font";
 import { FaSearch } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   padding: 1rem;
-  background-color: ${COLOR.Brown1};
+  background-color: ${COLOR.Sub2};
+  opacity: 0.8;
   min-height: 95px;
-  opacity: 0.9;
   font-size: ${FONT.L};
   color: ${COLOR.White};
+`;
+
+export const Logo = styled.div`
+  padding-left: 5%;
+  margin-right: 100px;
+
+  img {
+    z-index: 1;
+    width: 150px;
+    height: 60px;
+    background-color: transparent; /* 배경을 투명으로 설정 */
+    color: white; /* 아이콘 색상을 하얀색으로 설정 */
+  }
+`;
+
+export const NavContainer = styled.div`
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1300px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const Menu = styled.ul`
@@ -29,19 +51,6 @@ export const Item = styled.li`
   &:hover {
     color: black;
     border-bottom: 3px solid #000;
-  }
-`;
-
-export const Logo = styled.div`
-  padding-left: 5%;
-  margin-right: 10%;
-
-  img {
-    <index:!></index:!>
-    width: 150px;
-    height: 60px;
-    background-color: transparent; /* 배경을 투명으로 설정 */
-    color: white; /* 아이콘 색상을 하얀색으로 설정 */
   }
 `;
 
